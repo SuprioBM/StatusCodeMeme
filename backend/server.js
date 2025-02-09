@@ -19,10 +19,13 @@ app.use('/memes',memeRoutes)
 const port = process.env.PORT || 3000;
 
 //Server
+app.use((req, res) => {
+  res.status(404).send("Not Found");
+});
 
 // app.listen(port,() =>{
 //     console.log(`server is running on port ${process.env.PORT}`)
 // });
-export default app
+module.exports = app;
 
 
