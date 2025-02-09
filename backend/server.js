@@ -16,10 +16,10 @@ app.use(cors());
 //ROUTES
 app.use('/memes',memeRoutes)
 
-
+const port = process.env.PORT || 3000;
 
 //Server
-app.listen(process.env.PORT,() =>{
+app.listen(port,() =>{
     console.log(`server is running on port ${process.env.PORT}`)
 });
 
