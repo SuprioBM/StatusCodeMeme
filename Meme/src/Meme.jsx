@@ -26,7 +26,7 @@ const Meme = () => {
               try {
               const code = data.code
               const meme = await axios.get(
-                `${import.meta.env.VITE_APP_GET_URL}${code}`
+                `${import.meta.env.VITE_APP_URL}${code}`
               );
               if(!meme.data){
              alert("Sorry, Doesn't Exit Yet!!")

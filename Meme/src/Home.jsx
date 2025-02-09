@@ -23,7 +23,7 @@ const Home = () => {
       return;
     } else {
       try {
-        await axios.post(`${import.meta.env.VITE_APP_POST_URL}/add`, data, {
+        await axios.post(`${import.meta.env.VITE_APP_URL}/add`, data, {
           headers: {
             "Content-Type": "application/json",
           },
